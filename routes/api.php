@@ -21,6 +21,7 @@ use App\Http\Controllers\VoucherController;
 use App\Models\ChiTietDonHang;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FacebookController;
 //Tìm Kiếm
 Route::post('/khach-hang/mon-an/tim-kiem', [MonAnController::class, 'searchNguoiDung']);
 Route::post('/admin/quan-an/tim-kiem', [QuanAnController::class, 'search']);
@@ -245,3 +246,23 @@ Route::post('/khach-hang/don-dat-hang/phi-ship', [ChiTietDonHangController::clas
 // khach-hang/don-hang
 Route::get('/khach-hang/don-hang/data', [DonHangController::class, 'getDonHangKhachHang'])->middleware('khachHangMiddle');
 Route::post('/khach-hang/don-hang/data-chi-tiet', [DonHangController::class, 'getChiTietDonHangKhachHang'])->middleware('khachHangMiddle');
+
+
+// Route::get('/auth/facebook/url', [FacebookController::class, 'getUrl']);
+// Route::get('/auth/facebook/callback', [FacebookController::class, 'callback']);
+Route::get('/auth/khach-hang/facebook/url', [FacebookController::class, 'getKhachHangUrl']);
+Route::get('/auth/khach-hang/facebook/callback', [FacebookController::class, 'khachHangCallback']);
+
+
+Route::middleware('auth:sanctum')->get('/khach-hang/check-token', function (Request $request) {
+    return response()->json([
+        'status' => true,
+        'ho_ten' => $request->user()->name,
+    ]);
+});
+// Route::middleware('auth:sanctum')->get('/admin/check-token', function (Request $request) {
+//     return response()->json([
+//         'status' => true,
+//         'ho_ten_nhan_vien' => $request->user()->name,
+//     ]);
+// });
