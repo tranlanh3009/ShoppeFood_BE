@@ -218,6 +218,7 @@ Route::get('/khach-hang/dang-xuat-tat-ca', [KhachHangController::class, 'DangXua
 
 Route::post('/khach-hang/doi-mat-khau', [KhachHangController::class, 'doiMatKhau']);
 Route::get('/khach-hang/quan-an/data-open', [QuanAnController::class, 'getDataOpen']);
+Route::post('/khach-hang/quan-an/search', [QuanAnController::class, 'searchQA']);
 Route::get('/khach-hang/data-mon-an', [KhachHangController::class, 'getMonAn']);
 
 // khách hàng / profile
@@ -254,15 +255,4 @@ Route::get('/auth/khach-hang/facebook/url', [FacebookController::class, 'getKhac
 Route::get('/auth/khach-hang/facebook/callback', [FacebookController::class, 'khachHangCallback']);
 
 
-Route::middleware('auth:sanctum')->get('/khach-hang/check-token', function (Request $request) {
-    return response()->json([
-        'status' => true,
-        'ho_ten' => $request->user()->name,
-    ]);
-});
-// Route::middleware('auth:sanctum')->get('/admin/check-token', function (Request $request) {
-//     return response()->json([
-//         'status' => true,
-//         'ho_ten_nhan_vien' => $request->user()->name,
-//     ]);
-// });
+
