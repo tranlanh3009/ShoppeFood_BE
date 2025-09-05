@@ -18,171 +18,984 @@ class MonAnSeeder extends Seeder
         DB::table('mon_ans')->truncate();
 
         DB::table('mon_ans')->insert([
-            ['id' => '1', 'ten_mon_an' => 'Cafe Dừa', 'slug_mon_an' => 'cafe-dua', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Cafe đậm đà hòa quyện với vị béo ngọt của nước cốt dừa tươi, tạo nên hương vị độc đáo và hấp dẫn.', 'id_quan_an' => '2', 'tinh_trang' => '1', 'hinh_anh' => 'https://myvietcoffee.com/wp-content/uploads/2024/10/cach-lam-ca-phe-nuoc-cot-dua.jpg', 'id_danh_muc' => '17'],
-
-            ['id' => '2', 'ten_mon_an' => 'Cafe Máy', 'slug_mon_an' => 'cafe-may', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Cafe được pha bằng máy chuyên dụng, giữ trọn hương vị đậm đà và thơm ngon của hạt cafe nguyên chất.', 'id_quan_an' => '2', 'tinh_trang' => '1', 'hinh_anh' => 'https://anhthomay.com/wp-content/uploads/2024/03/46983405.jpg', 'id_danh_muc' => '17'],
-
-            ['id' => '3', 'ten_mon_an' => 'Cafe Sữa', 'slug_mon_an' => 'cafe-sua', 'gia_ban' => '17000', 'gia_khuyen_mai' => '12000', 'mo_ta' => 'Hương vị cafe truyền thống Việt Nam, đậm đà cùng vị ngọt béo của sữa đặc, tạo nên thức uống quen thuộc mà ai cũng yêu thích.', 'id_quan_an' => '2', 'tinh_trang' => '1', 'hinh_anh' => 'https://www.shutterstock.com/image-photo/iced-vietnamese-salt-coffee-condensed-600nw-2320994535.jpg', 'id_danh_muc' => '17'],
-
-            ['id' => '4', 'ten_mon_an' => 'Cafe Muối', 'slug_mon_an' => 'cafe-muoi', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Sự kết hợp độc đáo giữa cafe đậm đà với vị mặn nhẹ của muối, tạo nên hương vị lạ miệng và hấp dẫn.', 'id_quan_an' => '2', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tuoitre.vn/471584752817336320/2023/8/16/ca-phe-muoi-1692166818071338553380.png', 'id_danh_muc' => '17'],
-
-            ['id' => '5', 'ten_mon_an' => 'Nước Chanh', 'slug_mon_an' => 'nuoc-chanh', 'gia_ban' => '15000', 'gia_khuyen_mai' => '10000', 'mo_ta' => 'Thức uống giải khát từ chanh tươi, vị chua ngọt thanh mát, giúp giải nhiệt hiệu quả trong những ngày nóng.', 'id_quan_an' => '2', 'tinh_trang' => '1', 'hinh_anh' => 'https://media.vov.vn/sites/default/files/styles/large/public/2024-10/uong_nuoc_chanh_qua_nhieu_1.jpg', 'id_danh_muc' => '19'],
-
-            ['id' => '6', 'ten_mon_an' => 'Nước Cam Ép', 'slug_mon_an' => 'nuoc-cam', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Nước ép từ cam tươi nguyên chất, giàu vitamin C, vị chua ngọt tự nhiên, thơm mát và bổ dưỡng.', 'id_quan_an' => '2', 'tinh_trang' => '1', 'hinh_anh' => 'https://i.pinimg.com/736x/e1/2f/04/e12f04e59f41d77b623c621364198088.jpg', 'id_danh_muc' => '19'],
-
-            ['id' => '7', 'ten_mon_an' => 'Nước Ép Cà Rốt', 'slug_mon_an' => 'nuoc-ep-ca-rot', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Nước ép từ cà rốt tươi, giàu vitamin A, tốt cho mắt và da, vị ngọt tự nhiên, thanh mát và bổ dưỡng.', 'id_quan_an' => '2', 'tinh_trang' => '1', 'hinh_anh' => 'https://banhcuonnamviet.com/upload/product/epcarot-6565.jpg', 'id_danh_muc' => '19'],
-
-            ['id' => '8', 'ten_mon_an' => 'Nước Ép Thơm', 'slug_mon_an' => 'nuoc-ep-thom', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Nước ép từ dứa (thơm) tươi, vị chua ngọt hài hòa, thơm mát và giàu enzyme bromelain tốt cho tiêu hóa.', 'id_quan_an' => '2', 'tinh_trang' => '1', 'hinh_anh' => 'https://login.medlatec.vn//ImagePath/images/20230420/20230420_Nuoc-ep-dua-co-chua-nhieu-vitamin-va-khoang-chat-.jpg', 'id_danh_muc' => '19'],
-
-            ['id' => '9', 'ten_mon_an' => 'Lục Trà Chanh ', 'slug_mon_an' => 'luc-tra-chanh', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Trà xanh thơm mát kết hợp với vị chua thanh của chanh tươi, tạo nên thức uống giải khát hoàn hảo cho mùa hè.', 'id_quan_an' => '3', 'tinh_trang' => '1', 'hinh_anh' => 'https://congthucphache.com/wp-content/uploads/2021/10/z2829041305457_465d871cb818145dda9be6542ba95731.jpg', 'id_danh_muc' => '18'],
-
-            ['id' => '10', 'ten_mon_an' => 'Lục Trà Xoài', 'slug_mon_an' => 'luc-tra-xoai', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Trà xanh thơm ngon kết hợp với vị ngọt thanh của xoài chín, tạo nên hương vị nhiệt đới hấp dẫn.', 'id_quan_an' => '3', 'tinh_trang' => '1', 'hinh_anh' => 'https://congthucphache.com/wp-content/uploads/2021/10/z2847484529074_9f315bdce3a01f84745b61a47fa600fd.jpg', 'id_danh_muc' => '18'],
-
-            ['id' => '11', 'ten_mon_an' => 'Matcha Đá Xay', 'slug_mon_an' => 'matcha-da-xay', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Thức uống từ bột trà xanh Nhật Bản xay cùng đá, vị đắng nhẹ của matcha hòa quyện với vị ngọt, mát lạnh, sánh mịn.', 'id_quan_an' => '3', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2022/03/16/1420535/cach-lam-matcha-da-xay-kem-ngon-beo-ngay-don-gian-tai-nha-202203160109187743.jpg', 'id_danh_muc' => '16'],
-
-            ['id' => '12', 'ten_mon_an' => 'Socola Đá Xay', 'slug_mon_an' => 'socola-da-xay', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Đồ uống đá xay từ socola nguyên chất, vị ngọt đậm đà, béo ngậy và mát lạnh, thơm nồng hương socola.', 'id_quan_an' => '3', 'tinh_trang' => '1', 'hinh_anh' => 'https://noithatcaphe.vn/images/2022/07/15/socola-da-xay-1.jpg', 'id_danh_muc' => '16'],
-
-            ['id' => '13', 'ten_mon_an' => 'Phin Sữa Đá', 'slug_mon_an' => 'phin-sua-da', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Cafe được pha từ phin truyền thống, kết hợp với sữa đặc và đá, tạo nên hương vị đậm đà, ngọt béo đặc trưng của cafe Việt Nam.', 'id_quan_an' => '4', 'tinh_trang' => '1', 'hinh_anh' => 'https://thuytinhgiare.com/wp-content/uploads/2023/07/hinh-anh-ly-cafe-phin_4.jpg', 'id_danh_muc' => '17'],
-
-            ['id' => '14', 'ten_mon_an' => 'Phin Đen Đá', 'slug_mon_an' => 'phin-den-da', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Cafe đen đậm đà được pha từ phin truyền thống, kết hợp với đá, mang đến vị đắng đặc trưng và hương thơm nồng nàn.', 'id_quan_an' => '4', 'tinh_trang' => '1', 'hinh_anh' => 'https://cafesongao.com/wp-content/uploads/2021/07/ca-phe-den-da.png', 'id_danh_muc' => '17'],
-
-            ['id' => '15', 'ten_mon_an' => 'Bạc Xỉu', 'slug_mon_an' => 'bac-xiu', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Thức uống đặc trưng của Sài Gòn với cafe, sữa đặc và sữa tươi, tạo nên vị ngọt béo hài hòa, ít đắng hơn cafe sữa thông thường.', 'id_quan_an' => '4', 'tinh_trang' => '1', 'hinh_anh' => 'http://thuytinhgiare.com/wp-content/uploads/2023/07/hinh-anh-ly-cafe-bac-xiu_16.jpg', 'id_danh_muc' => '17'],
-
-            ['id' => '16', 'ten_mon_an' => 'Freeze Trà Xanh', 'slug_mon_an' => 'freeze-tra-xanh', 'gia_ban' => '50000', 'gia_khuyen_mai' => '45000', 'mo_ta' => 'Đồ uống đá xay mát lạnh từ trà xanh, vị thanh nhẹ, thơm mát và sảng khoái, phù hợp cho những ngày nóng bức.', 'id_quan_an' => '4', 'tinh_trang' => '1', 'hinh_anh' => 'https://dvpmarket.com/resources/uploads/images/2018/07/Freeze-tra-xanh-tuoi-mat-thom-ngon-1.jpg', 'id_danh_muc' => '18'],
-
-            ['id' => '17', 'ten_mon_an' => 'Freeze Socola', 'slug_mon_an' => 'freeze-socola', 'gia_ban' => '50000', 'gia_khuyen_mai' => '45000', 'mo_ta' => 'Thức uống đá xay từ socola đậm đà, mát lạnh, béo ngậy và thơm nồng hương socola, topping kem tươi béo ngọt.', 'id_quan_an' => '4', 'tinh_trang' => '1', 'hinh_anh' => 'https://recipes.net/wp-content/uploads/portal_files/recipes_net_posts/2021-06/freeze-easy-chocolate-shake-recipe.png', 'id_danh_muc' => '18'],
-
-            ['id' => '18', 'ten_mon_an' => 'Classic Phin Freeze', 'slug_mon_an' => 'classic-phin-freeze', 'gia_ban' => '50000', 'gia_khuyen_mai' => '45000', 'mo_ta' => 'Thức uống đá xay từ cafe phin truyền thống, kết hợp với kem tươi, mang đến hương vị cafe đậm đà cùng độ mát lạnh sảng khoái.', 'id_quan_an' => '4', 'tinh_trang' => '1', 'hinh_anh' => 'https://www.highlandscoffee.com.vn/vnt_upload/product/06_2023/HLC_New_logo_5.1_Products__CLASSIC_FREEZE_PHINDI.jpg', 'id_danh_muc' => '18'],
-
-            ['id' => '19', 'ten_mon_an' => 'Cơm Tấm Sườn', 'slug_mon_an' => 'com-tam-suon', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Cơm tấm thơm ngon với miếng sườn nướng thấm vị, ăn kèm đồ chua, mỡ hành và nước mắm chua ngọt đặc trưng.', 'id_quan_an' => '5', 'tinh_trang' => '1', 'hinh_anh' => 'https://lamsonfood.com/wp-content/uploads/2022/02/com-tam-duoc-nhieu-nguoi-yeu-thich.jpg', 'id_danh_muc' => '22'],
-
-            ['id' => '20', 'ten_mon_an' => 'Cơm Tấm Sườn Nướng', 'slug_mon_an' => 'com-tam-suon-nuong', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Cơm tấm với sườn nướng thơm lừng, vị ngọt của thịt kết hợp với mùi thơm của than hoa, ăn kèm đồ chua và nước mắm.', 'id_quan_an' => '5', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2021/08/09/1373996/tu-lam-com-tam-suon-trung-don-gian-thom-ngon-nhu-ngoai-hang-202201071248422991.jpg', 'id_danh_muc' => '22'],
-
-            ['id' => '21', 'ten_mon_an' => 'Cơm Gà Xé', 'slug_mon_an' => 'com-ga-xe', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Cơm trắng thơm ngon với thịt gà luộc xé nhỏ, thấm vị, ăn kèm rau răm, hành phi và nước mắm chua ngọt đặc biệt.', 'id_quan_an' => '5', 'tinh_trang' => '1', 'hinh_anh' => 'https://phugiafood.com/wp-content/uploads/2021/11/Com-ga-xe-phay-1-1024x768.jpg', 'id_danh_muc' => '20'],
-
-            ['id' => '22', 'ten_mon_an' => 'Cơm Chiên Dương Châu', 'slug_mon_an' => 'com-chien-duong-chau', 'gia_ban' => '40000', 'gia_khuyen_mai' => '35000', 'mo_ta' => 'Cơm chiên với nhiều loại nguyên liệu như thịt xá xíu, trứng, đậu Hà Lan, cà rốt... tạo nên món ăn đầy màu sắc và hương vị đặc trưng.', 'id_quan_an' => '6', 'tinh_trang' => '1', 'hinh_anh' => 'https://i.ytimg.com/vi/ZbSbc9Z8K6E/maxresdefault.jpg', 'id_danh_muc' => '23'],
-
-            ['id' => '23', 'ten_mon_an' => 'Cơm Đùi Gà Quay', 'slug_mon_an' => 'com-dui-ga-quay', 'gia_ban' => '40000', 'gia_khuyen_mai' => '35000', 'mo_ta' => 'Cơm trắng thơm ngon ăn kèm đùi gà quay giòn bên ngoài, mềm ngọt bên trong, thấm vị gia vị đặc trưng, phục vụ cùng nước mắm chua ngọt.', 'id_quan_an' => '6', 'tinh_trang' => '1', 'hinh_anh' => 'https://29foods.com/media/news/583_com_ga_quay.jpg', 'id_danh_muc' => '23'],
-
-            ['id' => '24', 'ten_mon_an' => 'Cơm Cánh Gà Quay', 'slug_mon_an' => 'com-canh-ga-quay', 'gia_ban' => '40000', 'gia_khuyen_mai' => '35000', 'mo_ta' => 'Cơm trắng thơm ngon ăn kèm cánh gà quay giòn thơm, thấm vị gia vị, da giòn thịt mềm, phục vụ cùng nước mắm chua ngọt.', 'id_quan_an' => '6', 'tinh_trang' => '1', 'hinh_anh' => 'https://29foods.com/media/news/1212_com-ga-quay1.jpg', 'id_danh_muc' => '23'],
-
-            ['id' => '25', 'ten_mon_an' => 'Cơm Chiên Trứng', 'slug_mon_an' => 'com-chien-trung', 'gia_ban' => '40000', 'gia_khuyen_mai' => '35000', 'mo_ta' => 'Cơm chiên với trứng tươi, hạt cơm tơi xốp, thơm mùi trứng và dậy mùi hành phi, đơn giản nhưng đầy hương vị.', 'id_quan_an' => '7', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2019/06/05/1171265/cach-lam-com-chien-trung-hat-com-toi-khong-bi-nhao-202203031523399671.jpg', 'id_danh_muc' => '23'],
-
-            ['id' => '26', 'ten_mon_an' => 'Cơm Chiên Heo Quay', 'slug_mon_an' => 'com-chien-heo-quay', 'gia_ban' => '40000', 'gia_khuyen_mai' => '35000', 'mo_ta' => 'Cơm chiên thơm ngon với thịt heo quay giòn bùi, thấm vị, kết hợp với các loại rau củ tạo nên món ăn đầy hương vị.', 'id_quan_an' => '7', 'tinh_trang' => '1', 'hinh_anh' => 'https://img-global.cpcdn.com/recipes/1f3479b6cd02e393/680x482cq70/c%C6%A1m-rang-th%E1%BB%8Bt-heo-quay-lowcarb-recipe-main-photo.jpg', 'id_danh_muc' => '23'],
-
-            ['id' => '27', 'ten_mon_an' => 'Cơm Cá Kho', 'slug_mon_an' => 'com-ca-kho', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Cơm trắng thơm ngon ăn kèm cá kho tộ đậm đà, thịt cá mềm thấm vị ngọt caramel và đậm đà nước kho.', 'id_quan_an' => '8', 'tinh_trang' => '1', 'hinh_anh' => 'https://vuongquocruou.vn/wp-content/uploads/2021/08/ca-nau-ruou-vang-thom-ngon.jpg', 'id_danh_muc' => '20'],
-
-            ['id' => '28', 'ten_mon_an' => 'Cơm Sườn Non', 'slug_mon_an' => 'com-suon-non', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Cơm trắng thơm ngon ăn kèm sườn non kho mềm, thấm vị đậm đà, ngọt thịt, phục vụ kèm nước kho béo ngậy.', 'id_quan_an' => '8', 'tinh_trang' => '1', 'hinh_anh' => 'https://comtamthuankieu.com.vn/wp-content/uploads/2020/12/IMG_0054-scaled.jpg', 'id_danh_muc' => '20'],
-
-            ['id' => '29', 'ten_mon_an' => 'Cơm Tôm Rim', 'slug_mon_an' => 'com-tom-rim', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Cơm trắng thơm ngon ăn kèm tôm rim mặn ngọt, thấm vị gia vị, vỏ tôm giòn thơm, thịt tôm ngọt đậm đà.', 'id_quan_an' => '8', 'tinh_trang' => '1', 'hinh_anh' => 'https://product.hstatic.net/1000245833/product/c_m_t_m_rim_master.jpg', 'id_danh_muc' => '20'],
-
-            ['id' => '30', 'ten_mon_an' => 'Xôi Chiên Thịt Băm', 'slug_mon_an' => 'xoi-chien-thit-bam', 'gia_ban' => '10000', 'gia_khuyen_mai' => '5000', 'mo_ta' => 'Xôi nếp được vo viên, bên trong có nhân thịt băm thơm ngon, chiên giòn vàng bên ngoài, dẻo bên trong.', 'id_quan_an' => '9', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2014/10/09/572276/bi-quyet-lam-xoi-chien-cang-an-cang-ghien--7.jpg', 'id_danh_muc' => '21'],
-
-            ['id' => '31', 'ten_mon_an' => 'Xôi Chiên Thịt Xíu', 'slug_mon_an' => 'xoi-chien-thit-xiu', 'gia_ban' => '10000', 'gia_khuyen_mai' => '5000', 'mo_ta' => 'Xôi nếp được vo viên, bên trong có nhân thịt xá xíu thơm ngon, chiên giòn vàng bên ngoài, dẻo bên trong.', 'id_quan_an' => '9', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.mediamart.vn/images/news/mach-bn-cach-lam-xoi-xa-xiu-cc-ngon-ch-vi-ni-chien-khong-du_3bb08258.jpg', 'id_danh_muc' => '21'],
-
-            ['id' => '32', 'ten_mon_an' => 'Xôi Chiên Gà Xé Cay', 'slug_mon_an' => 'xoi-chien-ga-xe-cay', 'gia_ban' => '10000', 'gia_khuyen_mai' => '5000', 'mo_ta' => 'Xôi nếp được vo viên, bên trong có nhân gà xé trộn gia vị cay thơm, chiên giòn vàng bên ngoài, dẻo bên trong.', 'id_quan_an' => '9', 'tinh_trang' => '1', 'hinh_anh' => 'https://daubepgiadinh.vn/wp-content/uploads/2018/05/hinh-xoi-ga-xe-600x400.jpg', 'id_danh_muc' => '21'],
-            ['id' => '33', 'ten_mon_an' => 'Xôi Chiên Chà Bông', 'slug_mon_an' => 'xoi-chien-cha-bong', 'gia_ban' => '10000', 'gia_khuyen_mai' => '5000', 'mo_ta' => 'Xôi nếp được vo viên, bên trong có nhân chà bông thơm ngon, chiên giòn vàng bên ngoài, dẻo bên trong, vị mặn ngọt hài hòa.', 'id_quan_an' => '9', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/2021/08/CookRecipe/Avatar/xoi-chien-cha-bong-mo-hanh-thumbnail-1.jpg', 'id_danh_muc' => '21'],
-
-            ['id' => '34', 'ten_mon_an' => 'Cá Viên Chiên', 'slug_mon_an' => 'ca-vien-chien', 'gia_ban' => '10000', 'gia_khuyen_mai' => '5000', 'mo_ta' => 'Cá viên được chiên vàng giòn, thơm mùi cá biển, dai ngon, ăn kèm tương ớt cay ngọt đặc trưng, là món ăn vặt yêu thích của nhiều người.', 'id_quan_an' => '9', 'tinh_trang' => '1', 'hinh_anh' => 'https://www.cet.edu.vn/wp-content/uploads/2018/04/ca-vien-chien.jpg', 'id_danh_muc' => '28'],
-
-            ['id' => '35', 'ten_mon_an' => 'Tôm Viên Chiên', 'slug_mon_an' => 'tom-vien-chien', 'gia_ban' => '10000', 'gia_khuyen_mai' => '5000', 'mo_ta' => 'Tôm viên được chiên vàng giòn, thơm mùi tôm biển, dai ngon, ăn kèm tương ớt cay ngọt đặc trưng, là món ăn vặt hấp dẫn.', 'id_quan_an' => '9', 'tinh_trang' => '1', 'hinh_anh' => 'https://navicdn.com/nakk/images_article/2018/10/23/cach-lam-tom-vien-4.jpg', 'id_danh_muc' => '28'],
-
-            ['id' => '36', 'ten_mon_an' => 'Bò Viên Chiên', 'slug_mon_an' => 'bo-vien-chien', 'gia_ban' => '10000', 'gia_khuyen_mai' => '5000', 'mo_ta' => 'Bò viên được chiên vàng giòn, thơm mùi thịt bò, dai ngon, ăn kèm tương ớt cay ngọt đặc trưng, là món ăn vặt được nhiều người yêu thích.', 'id_quan_an' => '9', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2021/08/21/1376755/cach-lam-bo-vien-chay-thom-ngon-chuan-vi-an-cung-bun-pho-deu-ngon-202201040958095687.jpg', 'id_danh_muc' => '28'],
-
-            ['id' => '37', 'ten_mon_an' => 'Xúc Xích Chiên', 'slug_mon_an' => 'xuc-xich-chien', 'gia_ban' => '10000', 'gia_khuyen_mai' => '5000', 'mo_ta' => 'Xúc xích được chiên vàng giòn bên ngoài, thơm ngon bên trong, ăn kèm tương ớt cay ngọt, là món ăn vặt phổ biến và được ưa chuộng.', 'id_quan_an' => '9', 'tinh_trang' => '1', 'hinh_anh' => 'https://food.ibin.vn/images/data/product/do-an-nhe/xuc-xich-chien.jpg', 'id_danh_muc' => '28'],
-
-            ['id' => '38', 'ten_mon_an' => 'Bún Thịt Nướng ', 'slug_mon_an' => 'bun-thit-nuong', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Bún trắng mềm ăn với thịt heo nướng thơm lừng, rau sống, đồ chua và nước mắm chua ngọt đặc trưng, tạo nên hương vị trọn vẹn của món ăn Việt Nam.', 'id_quan_an' => '10', 'tinh_trang' => '1', 'hinh_anh' => 'https://static.vinwonders.com/production/bun-thit-nuong-ha-noi-4.jpg', 'id_danh_muc' => '8'],
-
-            ['id' => '39', 'ten_mon_an' => 'Bún Thập Cẩm', 'slug_mon_an' => 'bun-thap-cam', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Bún trắng mềm ăn kèm nhiều loại thịt, hải sản và rau sống, đồ chua, chan với nước mắm chua ngọt đặc trưng, đa dạng hương vị trong một tô.', 'id_quan_an' => '10', 'tinh_trang' => '1', 'hinh_anh' => 'https://gcs.tripi.vn/public-tripi/tripi-feed/img/473849IIz/bun-rieu-ba-kieu-1042342.jpg', 'id_danh_muc' => '8'],
-
-            ['id' => '40', 'ten_mon_an' => 'Bún Mắm', 'slug_mon_an' => 'bun-mam', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Bún với nước dùng đặc trưng từ mắm cá linh, ăn kèm thịt heo, tôm, mực và rau sống, vị đậm đà, thơm nồng đặc trưng của miền Tây Nam Bộ.', 'id_quan_an' => '10', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2016/12/huong-vi-thom-ngon-kho-quen-cua-mon-bun-mam-nem-da-nang-953-5.jpg', 'id_danh_muc' => '8'],
-
-            ['id' => '41', 'ten_mon_an' => 'Nước Ép Cà Rốt', 'slug_mon_an' => 'nuoc-ep-ca-rot', 'gia_ban' => '20000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Nước ép từ cà rốt tươi nguyên chất, giàu vitamin A và các chất chống oxy hóa, vị ngọt tự nhiên, tốt cho sức khỏe và làn da.', 'id_quan_an' => '11', 'tinh_trang' => '1', 'hinh_anh' => 'https://matika.vn/wp-content/uploads/2022/09/cach-lam-nuoc-ep-ca-rot-ngon-nd.jpg', 'id_danh_muc' => '19'],
-
-            ['id' => '42', 'ten_mon_an' => 'Nước Dừa', 'slug_mon_an' => 'nuoc-dua', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Nước dừa tươi nguyên chất, vị ngọt thanh mát, giàu điện giải tự nhiên, giúp giải khát và bổ sung năng lượng hiệu quả.', 'id_quan_an' => '11', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2020/06/22/1264775/nuoc-dua-de-duoc-bao-lau-cach-bao-nuoc-dua-dung-202006221624116259.jpg', 'id_danh_muc' => '19'],
-
-            ['id' => '43', 'ten_mon_an' => 'Nước Ép Dưa Hấu', 'slug_mon_an' => 'nuoc-ep-dua-hau', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Nước ép từ dưa hấu tươi ngọt, giàu nước và chất chống oxy hóa, vị ngọt mát tự nhiên, giúp giải nhiệt hiệu quả trong mùa nóng.', 'id_quan_an' => '11', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2020/10/23/1301299/5-cach-lam-nuoc-ep-dua-hau-cuc-ngon-don-gian-tai-nha-202010231109233490.jpg', 'id_danh_muc' => '19'],
-
-            ['id' => '44', 'ten_mon_an' => 'Nước Mía', 'slug_mon_an' => 'nuoc-mia', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Nước ép từ cây mía tươi, vị ngọt thanh mát, không pha thêm đường, giúp giải khát và bổ sung năng lượng nhanh chóng.', 'id_quan_an' => '11', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/https://cms-prod.s3-sgn09.fptcloud.com/nuoc_mia_co_tac_dung_gi_doi_voi_suc_khoe_1_3faa508da1.jpg', 'id_danh_muc' => '19'],
-
-            ['id' => '45', 'ten_mon_an' => 'Trà Sữa Trân Châu Đường Đen', 'slug_mon_an' => 'tra-sua-tran-chau-duong-den', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Trà sữa thơm ngon kết hợp với trân châu đường đen dẻo ngọt, hương vị đậm đà của đường đen tạo nên thức uống hấp dẫn không thể cưỡng lại.', 'id_quan_an' => '12', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2022/01/21/1412109/huong-dan-cach-lam-tra-sua-tran-chau-duong-den-202201211537260116.jpg', 'id_danh_muc' => '16'],
-
-            ['id' => '46', 'ten_mon_an' => 'Trà Sữa Truyền Thống', 'slug_mon_an' => 'tra-sua-truyen-thong', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Trà đen thơm ngon kết hợp với sữa béo ngậy, vị ngọt vừa phải, là thức uống quen thuộc và được yêu thích của nhiều người.', 'id_quan_an' => '12', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2021/08/10/1374160/hoc-2-cach-pha-tra-sua-truyen-thong-thom-ngon-chuan-vi-ai-cung-me-202203031716377004.jpg', 'id_danh_muc' => '16'],
-
-            ['id' => '47', 'ten_mon_an' => 'Trà Sữa Bạc Hà', 'slug_mon_an' => 'tra-sua-bac-ha', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Trà sữa với hương vị bạc hà the mát, kết hợp với sữa béo ngậy, tạo cảm giác sảng khoái và thơm ngon khó cưỡng.', 'id_quan_an' => '12', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.nguyenkimmall.com/images/detailed/747/6-tra-sua-bac-ha.jpg.jpg', 'id_danh_muc' => '16'],
-
-            ['id' => '48', 'ten_mon_an' => 'Trà Sữa Khoai Môn', 'slug_mon_an' => 'tra-sua-khoai-mon', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Trà sữa với hương vị khoai môn béo ngậy, ngọt nhẹ, màu tím đặc trưng, là sự kết hợp hoàn hảo giữa trà, sữa và khoai môn.', 'id_quan_an' => '12', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2021/11/04/1395665/cach-lam-tra-sua-khoai-mon-thom-ngon-chuan-vi-202111041038558095.jpg', 'id_danh_muc' => '16'],
-
-            ['id' => '49', 'ten_mon_an' => 'Trà Sữa Sương Sáo', 'slug_mon_an' => 'tra-sua-suong-sao', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Trà sữa thơm ngon kết hợp với sương sáo dai mềm, tạo cảm giác thú vị khi thưởng thức, vừa ngọt vừa mát lạnh.', 'id_quan_an' => '12', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/2021/09/CookRecipe/Avatar/tra-sua-suong-sao-bang-bot-beo-thumbnail-1.jpg', 'id_danh_muc' => '16'],
-
-            ['id' => '50', 'ten_mon_an' => 'Trà Chanh Nhãn', 'slug_mon_an' => 'tra-chanh-nhan', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Trà thơm kết hợp với vị chua thanh của chanh và vị ngọt mọng nước của nhãn, tạo nên thức uống thanh mát, thơm ngon.', 'id_quan_an' => '12', 'tinh_trang' => '1', 'hinh_anh' => 'https://longnhanbamai.com/wp-content/uploads/2018/08/Cach-pha-tra-nhan-ngon.jpg', 'id_danh_muc' => '18'],
-
-            ['id' => '51', 'ten_mon_an' => 'Trà Chanh Bạc Hà', 'slug_mon_an' => 'tra-chanh-bac-ha', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Trà thơm kết hợp với vị chua thanh của chanh và hương bạc hà the mát, tạo nên thức uống sảng khoái, giải nhiệt tuyệt vời.', 'id_quan_an' => '12', 'tinh_trang' => '1', 'hinh_anh' => 'https://assets.unileversolutions.com/v1/1188476.jpg', 'id_danh_muc' => '18'],
-
-            ['id' => '52', 'ten_mon_an' => 'Trà Chanh Gừng Sả', 'slug_mon_an' => 'tra-chanh-gung-xa', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Trà thơm kết hợp với vị chua thanh của chanh, vị cay nồng của gừng và hương thơm của sả, tạo nên thức uống ấm áp và thơm lừng.', 'id_quan_an' => '12', 'tinh_trang' => '1', 'hinh_anh' => 'https://images.baodantoc.vn/uploads/2020/Th%C3%A1ng%202/Ng%C3%A0y%2017/tra-sa-e1571990437260.jpg', 'id_danh_muc' => '18'],
-
-            ['id' => '53', 'ten_mon_an' => 'Cơm Chay', 'slug_mon_an' => 'com-chay', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Cơm trắng thơm ngon ăn kèm các món chay từ rau củ và đậu, được chế biến cầu kỳ, đảm bảo đầy đủ dinh dưỡng và hương vị hấp dẫn.', 'id_quan_an' => '13', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdnphoto.dantri.com.vn/VatjkpCGL1EBMPma9e-lk1UQSGg=/thumb_w/960/2021/05/16/chay-09-1621125202654.jpg', 'id_danh_muc' => '20'],
-
-            ['id' => '54', 'ten_mon_an' => 'Bánh Canh Chay', 'slug_mon_an' => 'banh-canh-chay', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Bánh canh với sợi bánh dày và dai, nước dùng chay ngọt thanh từ rau củ, ăn kèm các loại rau nấm và đậu hũ, thơm ngon bổ dưỡng.', 'id_quan_an' => '13', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/2020/11/CookRecipe/GalleryStep/thanh-pham-622.jpg', 'id_danh_muc' => '2'],
-
-            ['id' => '55', 'ten_mon_an' => 'Mì Quảng Chay', 'slug_mon_an' => 'mi-quang-chay', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Mì Quảng với sợi mì dẹp vàng, nước dùng chay đặc sánh, ăn kèm rau sống, đậu phộng và bánh tráng nướng, hương vị đậm đà phong cách miền Trung.', 'id_quan_an' => '13', 'tinh_trang' => '1', 'hinh_anh' => 'https://beptruong.edu.vn/wp-content/uploads/2022/10/mi-quang-chay-voi-vi-thanh-dam.jpg', 'id_danh_muc' => '47'],
-
-            ['id' => '56', 'ten_mon_an' => 'Cà Ri Chay', 'slug_mon_an' => 'ca-ri-chay', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Cà ri chay với nước súp đặc sánh từ nước cốt dừa và gia vị cà ri, ăn kèm khoai tây, cà rốt, đậu và nấm, thơm ngon đậm đà.', 'id_quan_an' => '14', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2020/07/10/1269276/cach-nau-ca-ri-chay-thom-ngon-hap-dan-don-gian-tai-nha-202206041935524617.jpg', 'id_danh_muc' => '10'],
-
-            ['id' => '57', 'ten_mon_an' => 'Bánh Kem', 'slug_mon_an' => 'banh-kem', 'gia_ban' => '150000', 'gia_khuyen_mai' => '145000', 'mo_ta' => 'Bánh kem tươi mềm mịn, được trang trí đẹp mắt với kem tươi và trái cây tươi, ngọt vừa phải, thích hợp cho các dịp sinh nhật và lễ kỷ niệm.', 'id_quan_an' => '15', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/2020/12/CookProduct/1260-1200x643-68.jpg', 'id_danh_muc' => '31'],
-
-            ['id' => '58', 'ten_mon_an' => 'Bánh Su Kem', 'slug_mon_an' => 'banh-su-kem', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Bánh su vỏ ngoài giòn xốp, bên trong là lớp kem tươi béo ngậy, ngọt vừa phải, tạo nên sự hài hòa giữa vị giòn và mềm mịn.', 'id_quan_an' => '15', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/2021/06/CookRecipe/Avatar/banh-su-kem-thumbnail.jpg', 'id_danh_muc' => '31'],
-
-            ['id' => '59', 'ten_mon_an' => 'Cafe Sữa', 'slug_mon_an' => 'cafe-sua', 'gia_ban' => '12000', 'gia_khuyen_mai' => '7000', 'mo_ta' => 'Cafe đậm đà kết hợp với sữa đặc tạo nên vị ngọt béo hài hòa, thức uống truyền thống của người Việt, phù hợp mọi thời điểm trong ngày.', 'id_quan_an' => '15', 'tinh_trang' => '1', 'hinh_anh' => 'https://lyoncoffee.com.vn/wp-content/uploads/hinh-anh-ly-ca-phe-dep-nhat-15.jpg', 'id_danh_muc' => '17'],
-
-            ['id' => '60', 'ten_mon_an' => 'Đen Đá', 'slug_mon_an' => 'den-da', 'gia_ban' => '15000', 'gia_khuyen_mai' => '10000', 'mo_ta' => 'Cafe đen nguyên chất pha với đá, giữ trọn vị đắng đặc trưng và hương thơm nồng nàn của hạt cafe, thức uống dành cho người yêu thích vị đắng thuần túy.', 'id_quan_an' => '15', 'tinh_trang' => '1', 'hinh_anh' => 'https://product.hstatic.net/1000075078/product/1639377797_ca-phe-den-da_6f4766ec0f8b4e929a8d916ae3c13254.jpg', 'id_danh_muc' => '17'],
-
-            ['id' => '61', 'ten_mon_an' => 'Bánh Mì Heo Quay', 'slug_mon_an' => 'banh-mi-heo-quay', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Bánh mì giòn ngoài mềm trong với nhân thịt heo quay giòn bì, ăn kèm rau sống, đồ chua và sốt mayonnaise, hương vị đậm đà khó cưỡng.', 'id_quan_an' => '15', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2021/09/06/1380700/cach-lam-banh-mi-heo-quay-thom-ngon-cho-bua-sang-dinh-duong-202201041047079624.jpg', 'id_danh_muc' => '6'],
-
-            ['id' => '62', 'ten_mon_an' => 'Bánh Mì Ốp La', 'slug_mon_an' => 'banh-mi-op-la', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Bánh mì giòn ngoài mềm trong với nhân trứng ốp la vàng óng, lòng đào béo ngậy, ăn kèm rau sống, đồ chua và sốt mayonnaise, bữa sáng hoàn hảo.', 'id_quan_an' => '15', 'tinh_trang' => '1', 'hinh_anh' => 'https://hstatic.net/759/1000071759/1/2016/2-22/banh-mi-op-la_master.jpg', 'id_danh_muc' => '6'],
-
-            ['id' => '63', 'ten_mon_an' => 'Bánh Mì Chảo', 'slug_mon_an' => 'banh-mi-chao', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Bánh mì giòn nướng ăn kèm với trứng, thịt và rau củ được chiên trong chảo nóng, thơm ngon béo ngậy, bữa sáng đầy năng lượng.', 'id_quan_an' => '15', 'tinh_trang' => '1', 'hinh_anh' => 'https://i-giadinh.vnecdn.net/2023/11/03/Buoc-8-Thanh-pham-1-8-2421-1698986152.jpg', 'id_danh_muc' => '6'],
-            ['id' => '64', 'ten_mon_an' => 'Nước Dừa', 'slug_mon_an' => 'nuoc-dua', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Nước dừa tươi nguyên chất, vị ngọt thanh mát, giàu điện giải tự nhiên, giúp giải khát và bổ sung năng lượng, đặc biệt tốt trong những ngày nóng.', 'id_quan_an' => '16', 'tinh_trang' => '1', 'hinh_anh' => 'https://media.vov.vn/sites/default/files/styles/large/public/2023-08/20200513_094457_911488_loi-ich-cua-nuoc-du.max-1800x1800.jpg', 'id_danh_muc' => '19'],
-
-            ['id' => '65', 'ten_mon_an' => 'Nước Dừa Trân châu', 'slug_mon_an' => 'nuoc-dua-tran-chau', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Nước dừa tươi nguyên chất kết hợp với trân châu đen dẻo dai, tạo nên thức uống vừa thanh mát vừa có độ ngọt và dai thú vị khi thưởng thức.', 'id_quan_an' => '16', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/2021/05/CookRecipe/Avatar/nuoc-dua-tran-chau-dua-thumbnail-1.jpg', 'id_danh_muc' => '19'],
-
-            ['id' => '66', 'ten_mon_an' => 'Dừa Kem Sữa', 'slug_mon_an' => 'dua-kem-sua', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Thức uống từ nước dừa và cơm dừa non xay mịn với sữa và đường, tạo nên món kem sữa dừa mát lạnh, béo ngậy và thơm ngon.', 'id_quan_an' => '16', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2020/03/25/1244397/cach-lam-kem-dua-thom-ngon-tai-nha-bang-may-xay-sinh-to-202003251607205717.jpg', 'id_danh_muc' => '33'],
-
-            ['id' => '67', 'ten_mon_an' => 'Cacao nóng', 'slug_mon_an' => 'cacao-nong', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Thức uống nóng từ bột cacao nguyên chất, sữa và đường, tạo nên hương vị đậm đà, thơm nồng, ấm áp, phù hợp cho những ngày se lạnh.', 'id_quan_an' => '16', 'tinh_trang' => '1', 'hinh_anh' => 'https://vietblend.vn/wp-content/uploads/2016/10/0a99b4cc1da4fbfaa2b5.jpg', 'id_danh_muc' => '13'],
-
-            ['id' => '68', 'ten_mon_an' => 'Cacao đá', 'slug_mon_an' => 'cacao-da', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Thức uống từ bột cacao nguyên chất, sữa và đường, phục vụ với đá, tạo nên hương vị đậm đà, thơm nồng nhưng mát lạnh, giải khát hiệu quả.', 'id_quan_an' => '16', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/2021/11/CookRecipe/Avatar/ca-cao-da-thumbnail.png', 'id_danh_muc' => '13'],
-
-            ['id' => '69', 'ten_mon_an' => 'Cacao kem trứng', 'slug_mon_an' => 'cacao-kem-trung', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Thức uống từ bột cacao nguyên chất kết hợp với lớp kem trứng béo ngậy bên trên, tạo nên hương vị đặc biệt thơm ngon và hấp dẫn.', 'id_quan_an' => '16', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/2021/10/CookRecipe/Avatar/cacao-trung-thumbnail.jpg', 'id_danh_muc' => '13'],
-
-            ['id' => '70', 'ten_mon_an' => 'Chè Thái ', 'slug_mon_an' => 'che-thai', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Chè với nhiều loại thạch, trái cây, đậu và nước cốt dừa, hương vị ngọt béo hài hòa với vị chua nhẹ, là món tráng miệng giải nhiệt tuyệt vời.', 'id_quan_an' => '17', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2021/09/08/1381072/cach-lam-che-thai-sau-rieng-thom-ngon-an-la-ghien-202109081353585993.jpg', 'id_danh_muc' => '32'],
-
-            ['id' => '71', 'ten_mon_an' => 'Chè Thái Sầu', 'slug_mon_an' => 'che-thai-sau', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Chè Thái kết hợp với sầu riêng béo ngậy, tạo nên hương vị đặc biệt thơm ngon, béo ngậy và hấp dẫn, là phiên bản nâng cấp của chè Thái truyền thống.', 'id_quan_an' => '17', 'tinh_trang' => '1', 'hinh_anh' => 'https://beptruong.edu.vn/wp-content/uploads/2018/06/mon-che-thai-sau-rieng.jpg', 'id_danh_muc' => '32'],
-
-            ['id' => '72', 'ten_mon_an' => 'Chè Bưởi', 'slug_mon_an' => 'che-buoi', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Chè với cùi bưởi được sơ chế kỹ để loại bỏ vị đắng, nấu với đường và nước cốt dừa, tạo nên món tráng miệng thanh mát, thơm ngon.', 'id_quan_an' => '17', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2022/11/20/1488962/cach-nau-che-buoi-sai-gon-thom-sanh-dac-gion-ngon-tai-nha-202211210039464329.jpg', 'id_danh_muc' => '32'],
-
-            ['id' => '73', 'ten_mon_an' => 'Dừa Dầm', 'slug_mon_an' => 'dua-dam', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Cơm dừa non được cắt sợi, trộn với sữa đặc, đá bào và thạch, tạo nên món tráng miệng mát lạnh, ngọt thanh và thơm mùi dừa tự nhiên.', 'id_quan_an' => '17', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2021/12/24/1406445/cach-lam-che-dua-dam-ngon-chuan-vi-hai-phong-tai-nha-202112240108007211.jpg', 'id_danh_muc' => '32'],
-
-            ['id' => '74', 'ten_mon_an' => 'Dừa Sữa', 'slug_mon_an' => 'dua-sua', 'gia_ban' => '20000', 'gia_khuyen_mai' => '15000', 'mo_ta' => 'Thức uống từ nước dừa tươi kết hợp với sữa đặc và đá, tạo nên hương vị ngọt thanh, béo ngậy và thơm mùi dừa tự nhiên.', 'id_quan_an' => '17', 'tinh_trang' => '1', 'hinh_anh' => 'https://media.vneconomy.vn/images/upload/2021/04/21/sua-dua-15568650864101847268277.jpg', 'id_danh_muc' => '15'],
-
-            ['id' => '75', 'ten_mon_an' => 'Sườn Bì Chả', 'slug_mon_an' => 'suon-bi-cha', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Cơm tấm với sườn nướng thơm ngon, bì heo giòn dai và chả trứng béo ngậy, ăn kèm đồ chua và nước mắm chua ngọt đặc trưng.', 'id_quan_an' => '18', 'tinh_trang' => '1', 'hinh_anh' => 'https://comtamthuankieu.com.vn/wp-content/uploads/2020/12/IMG_0081-scaled.jpg', 'id_danh_muc' => '22'],
-
-            ['id' => '76', 'ten_mon_an' => 'Sườn Bì ', 'slug_mon_an' => 'suon-bi', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Cơm tấm với sườn nướng thơm ngon và bì heo giòn dai, ăn kèm đồ chua và nước mắm chua ngọt đặc trưng, hương vị đậm đà.', 'id_quan_an' => '18', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2021/08/16/1375565/cach-nau-com-tam-suon-bi-cha-tai-nha-ngon-nhu-ngoai-tiem-202108162216045436.jpg', 'id_danh_muc' => '22'],
-
-            ['id' => '77', 'ten_mon_an' => 'Sườn Chả', 'slug_mon_an' => 'suon-cha', 'gia_ban' => '30000', 'gia_khuyen_mai' => '25000', 'mo_ta' => 'Cơm tấm với sườn nướng thơm ngon và chả trứng béo ngậy, ăn kèm đồ chua và nước mắm chua ngọt đặc trưng, hương vị đậm đà.', 'id_quan_an' => '18', 'tinh_trang' => '1', 'hinh_anh' => 'https://comtambason.com/wp-content/uploads/2020/12/Suon-cha.png', 'id_danh_muc' => '22'],
-
-            ['id' => '78', 'ten_mon_an' => 'Súp Cua', 'slug_mon_an' => 'sup-cua', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Súp với thịt cua tươi ngon, trứng, nấm và bắp, đặc sánh và thơm ngon, là món khai vị hoàn hảo cho bữa ăn.', 'id_quan_an' => '19', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/2021/03/CookRecipe/GalleryStep/thanh-pham-353.jpg', 'id_danh_muc' => '9'],
-
-            ['id' => '79', 'ten_mon_an' => 'Súp Bột Báng', 'slug_mon_an' => 'sup-bot-bang', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Súp với bột báng trong suốt, dai mềm, nấu cùng thịt, trứng và nấm, tạo nên món súp đặc biệt thơm ngon và hấp dẫn.', 'id_quan_an' => '19', 'tinh_trang' => '1', 'hinh_anh' => 'https://thanhnien.mediacdn.vn/Uploaded/2014/Pictures201402/Thanh_Luan/2/botbang.jpg', 'id_danh_muc' => '9'],
-
-            ['id' => '80', 'ten_mon_an' => 'Óc Heo Chưng', 'slug_mon_an' => 'oc-heo', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Óc heo được chưng với gừng, hành và gia vị, tạo nên món ăn mềm mịn, béo ngậy và thơm ngon, giàu dinh dưỡng.', 'id_quan_an' => '19', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/2021/06/CookProduct/Oc-Heo-chung-gung-hanh-1200x676.jpg', 'id_danh_muc' => '44'],
-
-            ['id' => '81', 'ten_mon_an' => 'Cháo Lòng', 'slug_mon_an' => 'chao-long', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Cháo nấu với lòng heo, dồi, tiết và các bộ phận nội tạng khác, thơm ngon đậm đà, ăn kèm hành phi, tiêu và rau răm.', 'id_quan_an' => '20', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/Files/2021/08/31/1379186/cong-thuc-mon-chao-long-doi-huyet-thom-ngon-hap-dan-kho-cuong-202201201119382365.jpg', 'id_danh_muc' => '44'],
-
-            ['id' => '82', 'ten_mon_an' => 'Lòng Trộn', 'slug_mon_an' => 'long-tron', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Các loại lòng heo được luộc chín, thái nhỏ và trộn với rau thơm, đồ chua, gia vị, tạo nên món ăn chua cay mặn ngọt hài hòa.', 'id_quan_an' => '20', 'tinh_trang' => '1', 'hinh_anh' => 'https://imgamp.phunutoday.vn/files/dataimages/201608/11/original/cach-lam-mon-goi-long-heo-tron-chua-cay-thom-ngon-tai-nha-phunutodayvn_1470934242.jpg', 'id_danh_muc' => '44'],
-
-            ['id' => '83', 'ten_mon_an' => 'Lòng Nướng', 'slug_mon_an' => 'long-nuong', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Các loại lòng heo được tẩm ướp gia vị và nướng trên than hoa, thơm lừng, giòn dai và đậm đà, ăn kèm rau sống và nước chấm.', 'id_quan_an' => '20', 'tinh_trang' => '1', 'hinh_anh' => 'https://cdn.tgdd.vn/2020/10/CookProduct/61-1200x676.jpg', 'id_danh_muc' => '8'],
-
-            ['id' => '84', 'ten_mon_an' => 'Lòng Hấp', 'slug_mon_an' => 'long-hap', 'gia_ban' => '25000', 'gia_khuyen_mai' => '20000', 'mo_ta' => 'Các loại lòng heo được hấp với gừng và hành, giữ nguyên hương vị tự nhiên, mềm ngon, ăn kèm rau thơm và nước chấm đặc biệt.', 'id_quan_an' => '20', 'tinh_trang' => '1', 'hinh_anh' => 'https://pastaxi-manager.onepas.vn/content/uploads/articles/thanhmai/long-heo-hap-gung/long-heo-hap-gung%C4%83.jpg', 'id_danh_muc' => '44'],
+           [
+        'id' => 1,
+        'ten_mon_an' => 'Bún Mắm Thịt Quay',
+        'slug_mon_an' => 'bun-mam-thit-quay',
+        'gia_ban' => '40000',
+        'gia_khuyen_mai' => '35000',
+        'mo_ta' => 'Bún mắm đậm đà, ăn kèm thịt heo quay giòn, rau sống.',
+        'id_quan_an' => 1,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lstq4jhdyricf6@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 2,
+        'ten_mon_an' => 'Bún Mắm Thịt Luộc',
+        'slug_mon_an' => 'bun-mam-thit-luoc',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Thịt heo luộc mềm, chan mắm nêm đậm vị, kèm bún.',
+        'id_quan_an' => 1,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lsvb955msnmh40@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 3,
+        'ten_mon_an' => 'Bún Mắm Nem Chả Bò',
+        'slug_mon_an' => 'bun-mam-nem-cha-bo',
+        'gia_ban' => '38000',
+        'gia_khuyen_mai' => '32000',
+        'mo_ta' => 'Bún mắm nêm chan cùng chả bò Đà Nẵng, hương vị truyền thống.',
+        'id_quan_an' => 1,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134259-7ras8-mb0fd7hw7g0131@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 4,
+        'ten_mon_an' => 'Ram Cuốn Cải',
+        'slug_mon_an' => 'ram-cuon-cai',
+        'gia_ban' => '30000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Ram nhỏ giòn rụm, ăn kèm cải xanh và mắm nêm.',
+        'id_quan_an' => 1,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lsvdnx8j2z0k55@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 8
+    ],
+
+    // Quán 2: Mì Quảng Bà Mua
+    [
+        'id' => 5,
+        'ten_mon_an' => 'Mì Quảng Gà',
+        'slug_mon_an' => 'mi-quang-ga',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Mì Quảng với thịt gà thả vườn, nước dùng đậm vị.',
+        'id_quan_an' => 2,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134259-7ra0g-m8fo1gft8cqqb2@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 6,
+        'ten_mon_an' => 'Mì Quảng Tôm Thịt',
+        'slug_mon_an' => 'mi-quang-tom-thit',
+        'gia_ban' => '40000',
+        'gia_khuyen_mai' => '35000',
+        'mo_ta' => 'Mì Quảng ăn kèm tôm tươi, thịt ba chỉ, đậu phộng rang.',
+        'id_quan_an' => 2,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqvvdycjthhge6@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 7,
+        'ten_mon_an' => 'Mì Quảng Cá Lóc',
+        'slug_mon_an' => 'mi-quang-ca-loc',
+        'gia_ban' => '45000',
+        'gia_khuyen_mai' => '40000',
+        'mo_ta' => 'Cá lóc đồng nấu cùng mì Quảng, nước dùng ngọt thanh.',
+        'id_quan_an' => 2,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqvvdxnutmf826@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 8,
+        'ten_mon_an' => 'Mì Quảng Đặc Biệt',
+        'slug_mon_an' => 'mi-quang-dac-biet',
+        'gia_ban' => '42000',
+        'gia_khuyen_mai' => '37000',
+        'mo_ta' => 'Mì Quảng nấu với thập cẩm, thơm vị quê hương.',
+        'id_quan_an' => 2,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lwwwm7d9gz4p6d@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+
+    // Quán 3: Bánh Tráng Cuốn Thịt Heo Trần
+    [
+        'id' => 9,
+        'ten_mon_an' => 'Bánh Tráng Cuốn Thịt Heo',
+        'slug_mon_an' => 'banh-trang-cuon-thit-heo',
+        'gia_ban' => '70000',
+        'gia_khuyen_mai' => '65000',
+        'mo_ta' => 'Thịt heo luộc cuốn bánh tráng, ăn cùng rau sống và mắm nêm.',
+        'id_quan_an' => 3,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lsu8t019oiis67@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 8
+    ],
+    [
+        'id' => 10,
+        'ten_mon_an' => 'Bún Thịt Nướng',
+        'slug_mon_an' => 'bun-thit-nuong',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Bún ăn cùng thịt nướng tẩm ướp, rau sống, nước mắm chua ngọt.',
+        'id_quan_an' => 3,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr3vbzvxoihl19@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 11,
+        'ten_mon_an' => 'Ram Cuốn Cải',
+        'slug_mon_an' => 'ram-cuon-cai-thit-heo-tran',
+        'gia_ban' => '30000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Ram giòn rụm cuốn với cải xanh và chấm mắm nêm.',
+        'id_quan_an' => 3,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lstr40e1d7kpba@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 8
+    ],
+    [
+        'id' => 12,
+        'ten_mon_an' => 'Bánh Tráng Thịt Heo Quay',
+        'slug_mon_an' => 'banh-trang-thit-heo-quay',
+        'gia_ban' => '75000',
+        'gia_khuyen_mai' => '70000',
+        'mo_ta' => 'Thịt heo quay giòn rụm cuốn bánh tráng, rau sống, chấm mắm nêm.',
+        'id_quan_an' => 3,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqvzwyewm66c36@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 8
+    ],
+     [
+        'id' => 13,
+        'ten_mon_an' => 'Bánh Xèo Tôm Thịt',
+        'slug_mon_an' => 'banh-xeo-tom-thit',
+        'gia_ban' => '40000',
+        'gia_khuyen_mai' => '35000',
+        'mo_ta' => 'Bánh xèo giòn rụm, nhân tôm và thịt heo ba chỉ, ăn kèm rau sống.',
+        'id_quan_an' => 4,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7ra0g-ma855en7ystn7a@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 8
+    ],
+    [
+        'id' => 14,
+        'ten_mon_an' => 'Bánh Xèo Hải Sản',
+        'slug_mon_an' => 'banh-xeo-hai-san',
+        'gia_ban' => '45000',
+        'gia_khuyen_mai' => '40000',
+        'mo_ta' => 'Bánh xèo nhân mực, tôm tươi ngon, chấm nước mắm chua ngọt.',
+        'id_quan_an' => 4,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lsvdspsyjtzt50@resize_ss280x175!@crop_w280_h175_cT',
+        'id_danh_muc' => 8
+    ],
+    [
+        'id' => 15,
+        'ten_mon_an' => 'Nem Lụi Nướng',
+        'slug_mon_an' => 'nem-lui-nuong',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Nem lụi nướng vàng ươm, cuốn bánh tráng và rau sống.',
+        'id_quan_an' => 4,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsu3hec5mjes35@resize_ss280x175!@crop_w280_h175_cT',
+        'id_danh_muc' => 8
+    ],
+    [
+        'id' => 16,
+        'ten_mon_an' => 'Ram Cuốn Cải',
+        'slug_mon_an' => 'ram-cuon-cai-ba-duong',
+        'gia_ban' => '30000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Ram giòn rụm ăn kèm cải xanh và mắm nêm đặc trưng.',
+        'id_quan_an' => 4,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-bs-vn.img.susercontent.com/vn-11134259-7ra0g-m95nu5u4yd7ya2@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 8
+    ],
+
+    // Quán 5: Hải Sản Bé Mặn
+    [
+        'id' => 17,
+        'ten_mon_an' => 'Lẩu Hải Sản',
+        'slug_mon_an' => 'lau-hai-san',
+        'gia_ban' => '250000',
+        'gia_khuyen_mai' => '220000',
+        'mo_ta' => 'Nồi lẩu hải sản tươi ngon với tôm, mực, cá, nghêu.',
+        'id_quan_an' => 5,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-bs-vn.img.susercontent.com/vn-11134513-7ras8-m1birgzhxwrg89@resize_ss280x175!@crop_w280_h175_cT',
+        'id_danh_muc' => 7
+    ],
+    [
+        'id' => 18,
+        'ten_mon_an' => 'Hàu Nướng Mỡ Hành',
+        'slug_mon_an' => 'hau-nuong-mo-hanh',
+        'gia_ban' => '60000',
+        'gia_khuyen_mai' => '50000',
+        'mo_ta' => 'Hàu nướng than, rưới mỡ hành thơm béo.',
+        'id_quan_an' => 5,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lvgejzuwni3oeb@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 7
+    ],
+    [
+        'id' => 19,
+        'ten_mon_an' => 'Ghẹ Hấp Sả',
+        'slug_mon_an' => 'ghe-hap-sa',
+        'gia_ban' => '200000',
+        'gia_khuyen_mai' => '180000',
+        'mo_ta' => 'Ghẹ tươi hấp sả thơm lừng, giữ trọn vị ngọt tự nhiên.',
+        'id_quan_an' => 5,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7ras8-mda2z6y3pmsc00@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 7
+    ],
+    [
+        'id' => 20,
+        'ten_mon_an' => 'Mực Hấp Hành Gừng',
+        'slug_mon_an' => 'muc-hap-hanh-gung',
+        'gia_ban' => '180000',
+        'gia_khuyen_mai' => '160000',
+        'mo_ta' => 'Mực tươi hấp với hành gừng, ngọt thanh và thơm.',
+        'id_quan_an' => 5,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7ras8-m31i035denqycb@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 7
+    ],
+
+    // Quán 6: Mộc Coffee
+    [
+        'id' => 21,
+        'ten_mon_an' => 'Cafe Dừa',
+        'slug_mon_an' => 'cafe-dua',
+        'gia_ban' => '20000',
+        'gia_khuyen_mai' => '15000',
+        'mo_ta' => 'Cafe đậm đà kết hợp nước cốt dừa béo ngậy.',
+        'id_quan_an' => 6,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7ra0g-m9zerkdmf8mm92@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 17
+    ],
+    [
+        'id' => 22,
+        'ten_mon_an' => 'Cafe Muối',
+        'slug_mon_an' => 'cafe-muoi',
+        'gia_ban' => '25000',
+        'gia_khuyen_mai' => '20000',
+        'mo_ta' => 'Hương vị cafe độc đáo với chút muối mặn làm dậy hương.',
+        'id_quan_an' => 6,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7ra0g-m9zerke6d0re66@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 17
+    ],
+    [
+        'id' => 23,
+        'ten_mon_an' => 'Trà Chanh Sả',
+        'slug_mon_an' => 'tra-chanh-sa',
+        'gia_ban' => '25000',
+        'gia_khuyen_mai' => '20000',
+        'mo_ta' => 'Trà chanh thanh mát, kết hợp sả thơm.',
+        'id_quan_an' => 6,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-bs-vn.img.susercontent.com/vn-11134513-7r98o-lsuac4ondxac68@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 17
+    ],
+    [
+        'id' => 24,
+        'ten_mon_an' => 'Sinh Tố Bơ',
+        'slug_mon_an' => 'sinh-to-bo',
+        'gia_ban' => '30000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Sinh tố bơ sánh mịn, béo ngậy, mát lạnh.',
+        'id_quan_an' => 6,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqyan5nm3btl0a@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 17
+    ],
+    // Quán 7: Cô Hòa - Bánh Canh & Bún Chả Cá
+    [
+        'id' => 25,
+        'ten_mon_an' => 'Bánh Canh Chả Cá',
+        'slug_mon_an' => 'banh-canh-cha-ca',
+        'gia_ban' => '30000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Bánh canh bột gạo, chan nước lèo ngọt thanh cùng chả cá dai ngon.',
+        'id_quan_an' => 7,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lsvb0qkxm7k4e0@resize_ss280x175!@crop_w280_h175_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 26,
+        'ten_mon_an' => 'Bánh Canh Giò Heo',
+        'slug_mon_an' => 'banh-canh-gio-heo',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Giò heo ninh mềm, chan cùng nước lèo đậm vị, ăn kèm bánh canh.',
+        'id_quan_an' => 7,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqx4vv7lvs0p00@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 27,
+        'ten_mon_an' => 'Bún Chả Cá',
+        'slug_mon_an' => 'bun-cha-ca-co-hoa',
+        'gia_ban' => '30000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Bún ăn cùng chả cá chiên, nước lèo ngọt thanh đặc trưng.',
+        'id_quan_an' => 7,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lstq53a6znpgec@resize_ss280x175!@crop_w280_h175_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 28,
+        'ten_mon_an' => 'Bún Cá Ngừ',
+        'slug_mon_an' => 'bun-ca-ngu',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Cá ngừ kho mềm ăn kèm bún, nước dùng thơm ngọt.',
+        'id_quan_an' => 7,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr2r61skjk5g8a@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+
+    // Quán 8: Cơm Gà Ta Cô Ký
+    [
+        'id' => 29,
+        'ten_mon_an' => 'Cơm Gà Xé',
+        'slug_mon_an' => 'com-ga-xe',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Cơm vàng ăn kèm gà xé phay, nước mắm gừng đậm vị.',
+        'id_quan_an' => 8,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7ra0g-m9j4c84ofadga7@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 30,
+        'ten_mon_an' => 'Cơm Gà Quay',
+        'slug_mon_an' => 'com-ga-quay',
+        'gia_ban' => '40000',
+        'gia_khuyen_mai' => '35000',
+        'mo_ta' => 'Gà quay vàng giòn, ăn cùng cơm nghệ thơm ngon.',
+        'id_quan_an' => 8,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lstspece3cm1f7@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 31,
+        'ten_mon_an' => 'Cơm Gà Luộc',
+        'slug_mon_an' => 'com-ga-luoc',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Cơm dẻo vàng, ăn cùng thịt gà luộc mềm, chấm muối tiêu chanh.',
+        'id_quan_an' => 8,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lsv8mcgiv5p590@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 32,
+        'ten_mon_an' => 'Miến Gà',
+        'slug_mon_an' => 'mien-ga',
+        'gia_ban' => '30000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Miến dong dai ngon, chan nước dùng gà trong ngọt.',
+        'id_quan_an' => 8,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lsv1n6jemc3o41@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 6
+    ],
+
+    // Quán 9: Chè Bưởi Phương Nam
+    [
+        'id' => 33,
+        'ten_mon_an' => 'Chè Bưởi',
+        'slug_mon_an' => 'che-buoi',
+        'gia_ban' => '20000',
+        'gia_khuyen_mai' => '15000',
+        'mo_ta' => 'Chè bưởi thơm ngon, giòn giòn, ăn mát lạnh.',
+        'id_quan_an' => 9,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lsu2wv21h2mxfa@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 9
+    ],
+    [
+        'id' => 34,
+        'ten_mon_an' => 'Chè Thái',
+        'slug_mon_an' => 'che-thai',
+        'gia_ban' => '25000',
+        'gia_khuyen_mai' => '20000',
+        'mo_ta' => 'Chè Thái nhiều loại trái cây, thạch và nước cốt dừa.',
+        'id_quan_an' => 9,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-ws-vn.img.susercontent.com/vn-11134513-7r98o-lstqbuxofnh55a@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 9
+    ],
+    [
+        'id' => 35,
+        'ten_mon_an' => 'Chè Khoai Dẻo',
+        'slug_mon_an' => 'che-khoai-deo',
+        'gia_ban' => '22000',
+        'gia_khuyen_mai' => '18000',
+        'mo_ta' => 'Chè ngọt dịu, khoai lang dẻo, trân châu và nước cốt dừa.',
+        'id_quan_an' => 9,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr72g513fohwe0@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 9
+    ],
+    [
+        'id' => 36,
+        'ten_mon_an' => 'Chè Sâm Bổ Lượng',
+        'slug_mon_an' => 'che-sam-bo-luong',
+        'gia_ban' => '25000',
+        'gia_khuyen_mai' => '20000',
+        'mo_ta' => 'Chè thanh mát với nhiều loại thảo mộc và hạt bổ dưỡng.',
+        'id_quan_an' => 9,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqxt3zysj7h5f2@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 9
+    ],
+     [
+        'id' => 37,
+        'ten_mon_an' => 'Bánh Mì Thịt Nguội',
+        'slug_mon_an' => 'banh-mi-thit-nguoi',
+        'gia_ban' => '20000',
+        'gia_khuyen_mai' => '18000',
+        'mo_ta' => 'Bánh mì giòn rụm kẹp thịt nguội, pate và rau dưa chua.',
+        'id_quan_an' => 10,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lx5g7a9texgbc7@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 10
+    ],
+    [
+        'id' => 38,
+        'ten_mon_an' => 'Bánh Mì Trứng Ốp La',
+        'slug_mon_an' => 'banh-mi-trung-op-la',
+        'gia_ban' => '18000',
+        'gia_khuyen_mai' => '15000',
+        'mo_ta' => 'Bánh mì kẹp trứng ốp la, pate, dưa leo và nước sốt đặc trưng.',
+        'id_quan_an' => 10,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqz2dhjcgtdwc2@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 10
+    ],
+    [
+        'id' => 39,
+        'ten_mon_an' => 'Bánh Mì Xíu Mại',
+        'slug_mon_an' => 'banh-mi-xiu-mai',
+        'gia_ban' => '25000',
+        'gia_khuyen_mai' => '20000',
+        'mo_ta' => 'Bánh mì kèm xíu mại nóng hổi, sốt cà chua đậm đà.',
+        'id_quan_an' => 10,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-tx-vn.img.susercontent.com/vn-11134259-7ras8-m0shgmte5ywd24@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 10
+    ],
+    [
+        'id' => 40,
+        'ten_mon_an' => 'Bánh Mì Pate Chả Lụa',
+        'slug_mon_an' => 'banh-mi-pate-cha-lua',
+        'gia_ban' => '22000',
+        'gia_khuyen_mai' => '18000',
+        'mo_ta' => 'Bánh mì pate béo ngậy, chả lụa và rau dưa chua giòn.',
+        'id_quan_an' => 10,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-tx-vn.img.susercontent.com/vn-11134513-7r98o-lsvfuets68jo7a@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 10
+    ],
+
+    // Quán 11: Dê Thuần
+    [
+        'id' => 41,
+        'ten_mon_an' => 'Lẩu Dê',
+        'slug_mon_an' => 'lau-de',
+        'gia_ban' => '250000',
+        'gia_khuyen_mai' => '220000',
+        'mo_ta' => 'Lẩu dê hương vị đậm đà, ăn kèm rau và bún tươi.',
+        'id_quan_an' => 11,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr3i9l6jkkntd2@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 7
+    ],
+    [
+        'id' => 42,
+        'ten_mon_an' => 'Dê Nướng Ngũ Vị',
+        'slug_mon_an' => 'de-nuong-ngu-vi',
+        'gia_ban' => '180000',
+        'gia_khuyen_mai' => '160000',
+        'mo_ta' => 'Thịt dê tẩm ngũ vị hương, nướng trên than hồng thơm lừng.',
+        'id_quan_an' => 11,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr68dc598mfte9@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 7
+    ],
+    [
+        'id' => 44,
+        'ten_mon_an' => 'Dê Xào Lăn',
+        'slug_mon_an' => 'de-xao-lan',
+        'gia_ban' => '150000',
+        'gia_khuyen_mai' => '130000',
+        'mo_ta' => 'Thịt dê xào lăn với sả ớt, nước cốt dừa thơm béo.',
+        'id_quan_an' => 11,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqyab7dbrhl077@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 7
+    ],
+
+    // Quán 12: Quán Nhung - Cơm Hến & Mì Hến
+    [
+        'id' => 45,
+        'ten_mon_an' => 'Cơm Hến',
+        'slug_mon_an' => 'com-hen',
+        'gia_ban' => '30000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Cơm trộn cùng hến xào, rau sống và tóp mỡ giòn.',
+        'id_quan_an' => 12,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lw70xqbkn6xl9c@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 46,
+        'ten_mon_an' => 'Mì Hến',
+        'slug_mon_an' => 'mi-hen',
+        'gia_ban' => '30000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Mì ăn cùng hến xào, chan nước dùng thanh ngọt.',
+        'id_quan_an' => 12,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqx4gs3inw611e@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 47,
+        'ten_mon_an' => 'Cháo Hến',
+        'slug_mon_an' => 'chao-hen',
+        'gia_ban' => '28000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Cháo hến nóng hổi, hương vị đậm đà, giàu dinh dưỡng.',
+        'id_quan_an' => 12,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqxpa0g7w3h52e@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 48,
+        'ten_mon_an' => 'Bún Hến',
+        'slug_mon_an' => 'bun-hen',
+        'gia_ban' => '30000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Bún ăn cùng hến xào thơm, rau sống và đậu phộng rang.',
+        'id_quan_an' => 12,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqx4l43ef4xwfc@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    // Quán 13: Hủ Tiếu Mỳ Sài Thành - Gỏi Cuốn - Âu Cơ
+    [
+        'id' => 49,
+        'ten_mon_an' => 'Hủ Tiếu Nam Vang',
+        'slug_mon_an' => 'hu-tieu-nam-vang',
+        'gia_ban' => '45000',
+        'gia_khuyen_mai' => '40000',
+        'mo_ta' => 'Hủ tiếu nước ngọt thanh, ăn kèm tôm, thịt bằm và trứng cút.',
+        'id_quan_an' => 13,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-tx-vn.img.susercontent.com/vn-11134513-7r98o-lsv3869k60m1a1@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 50,
+        'ten_mon_an' => 'Hủ Tiếu Mì Khô',
+        'slug_mon_an' => 'hu-tieu-mi-kho',
+        'gia_ban' => '40000',
+        'gia_khuyen_mai' => '35000',
+        'mo_ta' => 'Mì khô trộn đậm vị, ăn kèm xá xíu và hoành thánh.',
+        'id_quan_an' => 13,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7ras8-m3ppxbh37gz98e@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 51,
+        'ten_mon_an' => 'Mì Hoành Thánh',
+        'slug_mon_an' => 'mi-hoanh-thanh',
+        'gia_ban' => '42000',
+        'gia_khuyen_mai' => '38000',
+        'mo_ta' => 'Mì tươi ăn kèm hoành thánh nhân tôm thịt thơm ngon.',
+        'id_quan_an' => 13,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr5xnllqig90b8@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 52,
+        'ten_mon_an' => 'Gỏi Cuốn Tôm Thịt',
+        'slug_mon_an' => 'goi-cuon-tom-thit',
+        'gia_ban' => '30000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Cuốn tôm thịt với rau sống và bún, chấm nước mắm pha.',
+        'id_quan_an' => 13,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-tx-vn.img.susercontent.com/vn-11134513-7r98o-lsu62ayp655l08@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 8
+    ],
+
+    // Quán 14: Bánh Mỳ Cô Na
+    [
+        'id' => 53,
+        'ten_mon_an' => 'Bánh Mì Thịt Nướng',
+        'slug_mon_an' => 'banh-mi-thit-nuong',
+        'gia_ban' => '20000',
+        'gia_khuyen_mai' => '17000',
+        'mo_ta' => 'Bánh mì giòn, nhân thịt nướng thơm, rau sống và đồ chua.',
+        'id_quan_an' => 14,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-tx-vn.img.susercontent.com/vn-11134513-7r98o-lsvbpn5tjhjt6f@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 10
+    ],
+    [
+        'id' => 54,
+        'ten_mon_an' => 'Bánh Mì Gà Xé',
+        'slug_mon_an' => 'banh-mi-ga-xe',
+        'gia_ban' => '20000',
+        'gia_khuyen_mai' => '17000',
+        'mo_ta' => 'Bánh mì kẹp gà xé phay, pate và sốt mayonnaise.',
+        'id_quan_an' => 14,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-tx-vn.img.susercontent.com/vn-11134513-7r98o-lsv1zblb1oec7e@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 10
+    ],
+    [
+        'id' => 55,
+        'ten_mon_an' => 'Bánh Mì Chả Cá',
+        'slug_mon_an' => 'banh-mi-cha-ca',
+        'gia_ban' => '18000',
+        'gia_khuyen_mai' => '15000',
+        'mo_ta' => 'Bánh mì kẹp chả cá chiên, rau dưa chua.',
+        'id_quan_an' => 14,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-tx-vn.img.susercontent.com/vn-11134513-7r98o-lsvgmnx3s595d5@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 10
+    ],
+    [
+        'id' => 56,
+        'ten_mon_an' => 'Bánh Mì Pate Trứng',
+        'slug_mon_an' => 'banh-mi-pate-trung',
+        'gia_ban' => '18000',
+        'gia_khuyen_mai' => '15000',
+        'mo_ta' => 'Bánh mì pate béo ngậy ăn kèm trứng ốp la.',
+        'id_quan_an' => 14,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lvjtzp6134b10a@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 10
+    ],
+
+    // Quán 15: Bún Chả Cá Bà Lữ
+    [
+        'id' => 57,
+        'ten_mon_an' => 'Bún Chả Cá Nấu',
+        'slug_mon_an' => 'bun-cha-ca-nau',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Bún chan nước lèo đậm vị, chả cá nấu mềm thơm.',
+        'id_quan_an' => 15,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-tx-vn.img.susercontent.com/vn-11134513-7r98o-lstq0vm90fq125@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 58,
+        'ten_mon_an' => 'Bún Chả Cá Chiên',
+        'slug_mon_an' => 'bun-cha-ca-chien',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Chả cá chiên vàng giòn, ăn cùng bún và nước dùng trong.',
+        'id_quan_an' => 15,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr6e5wm1iax013@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 59,
+        'ten_mon_an' => 'Bún Chả Cá Thập Cẩm',
+        'slug_mon_an' => 'bun-cha-ca-thap-cam',
+        'gia_ban' => '40000',
+        'gia_khuyen_mai' => '35000',
+        'mo_ta' => 'Bún ăn kèm chả cá nấu, chiên và rau sống.',
+        'id_quan_an' => 15,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr2r60qa3laxb0@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 60,
+        'ten_mon_an' => 'Bún Cá Ngừ',
+        'slug_mon_an' => 'bun-ca-ngu-ba-lu',
+        'gia_ban' => '38000',
+        'gia_khuyen_mai' => '33000',
+        'mo_ta' => 'Cá ngừ kho ăn kèm bún, nước dùng ngọt dịu.',
+        'id_quan_an' => 15,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr2r61skjk5g8a@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 61,
+        'ten_mon_an' => 'Bún Riêu Cua',
+        'slug_mon_an' => 'bun-rieu-cua',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Bún riêu cua đồng thơm ngon, chan nước dùng chua thanh.',
+        'id_quan_an' => 16,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7ra0g-m6c91k9j6qeu54@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 62,
+        'ten_mon_an' => 'Bún Riêu Chả Cá',
+        'slug_mon_an' => 'bun-rieu-cha-ca',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Nước dùng riêu thanh ngọt, ăn kèm chả cá chiên.',
+        'id_quan_an' => 16,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7ra0g-m6c8wzj09e4885@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 63,
+        'ten_mon_an' => 'Bún Riêu Thịt Bò',
+        'slug_mon_an' => 'bun-rieu-thit-bo',
+        'gia_ban' => '40000',
+        'gia_khuyen_mai' => '35000',
+        'mo_ta' => 'Bún riêu cua ăn kèm thịt bò tái, chan nước dùng nóng hổi.',
+        'id_quan_an' => 16,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7ra0g-m6c917wr9m5354@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 64,
+        'ten_mon_an' => 'Bún Riêu Giò Heo',
+        'slug_mon_an' => 'bun-rieu-gio-heo',
+        'gia_ban' => '42000',
+        'gia_khuyen_mai' => '38000',
+        'mo_ta' => 'Giò heo hầm mềm, ăn kèm bún riêu cua đậm đà.',
+        'id_quan_an' => 16,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr4orwcsb6boe2@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+
+    // Quán 17: Hải Sản Năm Rảnh
+    [
+        'id' => 65,
+        'ten_mon_an' => 'Tôm Hùm Nướng Phô Mai',
+        'slug_mon_an' => 'tom-hum-nuong-pho-mai',
+        'gia_ban' => '450000',
+        'gia_khuyen_mai' => '400000',
+        'mo_ta' => 'Tôm hùm tươi nướng phô mai béo ngậy.',
+        'id_quan_an' => 17,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-luvrn6v4vm7940@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 7
+    ],
+    [
+        'id' => 66,
+        'ten_mon_an' => 'Sò Điệp Nướng Mỡ Hành',
+        'slug_mon_an' => 'so-diep-nuong-mo-hanh',
+        'gia_ban' => '90000',
+        'gia_khuyen_mai' => '80000',
+        'mo_ta' => 'Sò điệp nướng than, rưới mỡ hành thơm lừng.',
+        'id_quan_an' => 17,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr0pr3dbt8rd2b@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 7
+    ],
+    [
+        'id' => 67,
+        'ten_mon_an' => 'Ngao Hấp Thái',
+        'slug_mon_an' => 'ngao-hap-thai',
+        'gia_ban' => '120000',
+        'gia_khuyen_mai' => '100000',
+        'mo_ta' => 'Ngao hấp kiểu Thái cay cay chua chua hấp dẫn.',
+        'id_quan_an' => 17,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr0pv2dejnpg9a@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 7
+    ],
+    [
+        'id' => 68,
+        'ten_mon_an' => 'Cua Rang Me',
+        'slug_mon_an' => 'cua-rang-me',
+        'gia_ban' => '250000',
+        'gia_khuyen_mai' => '220000',
+        'mo_ta' => 'Cua rang sốt me chua ngọt đặc trưng, ngon khó cưỡng.',
+        'id_quan_an' => 17,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqz97vfqejkp2e@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 7
+    ],
+
+    // Quán 18: Bánh Mì Heo Nướng Lu An
+    [
+        'id' => 69,
+        'ten_mon_an' => 'Bánh Mì Heo Nướng',
+        'slug_mon_an' => 'banh-mi-heo-nuong',
+        'gia_ban' => '20000',
+        'gia_khuyen_mai' => '17000',
+        'mo_ta' => 'Bánh mì kẹp thịt heo nướng, rau sống và nước sốt đặc biệt.',
+        'id_quan_an' => 18,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-zl-vn.img.susercontent.com/vn-11134259-7ra0g-m9wujjcsxee2f0@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 10
+    ],
+    [
+        'id' => 70,
+        'ten_mon_an' => 'Bánh Mì Heo Quay',
+        'slug_mon_an' => 'banh-mi-heo-quay',
+        'gia_ban' => '22000',
+        'gia_khuyen_mai' => '18000',
+        'mo_ta' => 'Heo quay giòn da, ăn kèm bánh mì nóng giòn.',
+        'id_quan_an' => 18,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-zl-vn.img.susercontent.com/vn-11134259-7ra0g-m9wujjcsxee2f0@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 10
+    ],
+    [
+        'id' => 71,
+        'ten_mon_an' => 'Bánh Mì Heo Xá Xíu',
+        'slug_mon_an' => 'banh-mi-heo-xa-xiu',
+        'gia_ban' => '25000',
+        'gia_khuyen_mai' => '20000',
+        'mo_ta' => 'Bánh mì heo xá xíu đậm vị, sốt đậm đà.',
+        'id_quan_an' => 18,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-zl-vn.img.susercontent.com/vn-11134259-7ras8-m0shgmte5ywd24@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 10
+    ],
+    [
+        'id' => 72,
+        'ten_mon_an' => 'Bánh Mì Heo Rim',
+        'slug_mon_an' => 'banh-mi-heo-rim',
+        'gia_ban' => '20000',
+        'gia_khuyen_mai' => '17000',
+        'mo_ta' => 'Thịt heo rim mặn ngọt đưa cơm, kẹp trong bánh mì.',
+        'id_quan_an' => 18,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-zl-vn.img.susercontent.com/vn-11134513-7r98o-lsv3tml5yt3899@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 10
+    ],
+
+    // Quán 19: Tiệm Cơm Cà Mèn - Gà Nướng Muối Ớt Lá Chanh
+    [
+        'id' => 73,
+        'ten_mon_an' => 'Gà Nướng Muối Ớt',
+        'slug_mon_an' => 'ga-nuong-muoi-ot',
+        'gia_ban' => '150000',
+        'gia_khuyen_mai' => '130000',
+        'mo_ta' => 'Gà nguyên con nướng muối ớt lá chanh thơm ngon.',
+        'id_quan_an' => 19,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-zl-vn.img.susercontent.com/vn-11134513-7r98o-lsvdenxktzfdd1@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 74,
+        'ten_mon_an' => 'Cơm Cà Mèn Thịt Kho',
+        'slug_mon_an' => 'com-ca-men-thit-kho',
+        'gia_ban' => '40000',
+        'gia_khuyen_mai' => '35000',
+        'mo_ta' => 'Cơm cà mèn ăn kèm thịt kho tàu, trứng và rau củ.',
+        'id_quan_an' => 19,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr5jvxy4jikke9@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 75,
+        'ten_mon_an' => 'Cơm Cà Mèn Cá Kho',
+        'slug_mon_an' => 'com-ca-men-ca-kho',
+        'gia_ban' => '38000',
+        'gia_khuyen_mai' => '33000',
+        'mo_ta' => 'Cơm cà mèn ăn cùng cá kho tộ, vị đậm đà.',
+        'id_quan_an' => 19,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lqzi26clo7fd54@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+    [
+        'id' => 76,
+        'ten_mon_an' => 'Cơm Cà Mèn Trứng Chiên',
+        'slug_mon_an' => 'com-ca-men-trung-chien',
+        'gia_ban' => '35000',
+        'gia_khuyen_mai' => '30000',
+        'mo_ta' => 'Cơm cà mèn ăn kèm trứng chiên và dưa leo.',
+        'id_quan_an' => 19,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lr5j2s9ombpg2f@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 6
+    ],
+
+    // Quán 20: Chè Liên Đà Nẵng
+    [
+        'id' => 77,
+        'ten_mon_an' => 'Chè Sầu Liên',
+        'slug_mon_an' => 'che-sau-lien',
+        'gia_ban' => '30000',
+        'gia_khuyen_mai' => '25000',
+        'mo_ta' => 'Chè sầu riêng đặc sản Đà Nẵng, béo ngậy thơm ngon.',
+        'id_quan_an' => 20,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://down-zl-vn.img.susercontent.com/vn-11134513-7r98o-lsv7ct2zw5uhc3@resize_ss640x400!@crop_w640_h400_cT',
+        'id_danh_muc' => 9
+    ],
+    [
+        'id' => 78,
+        'ten_mon_an' => 'Chè Thái Liên',
+        'slug_mon_an' => 'che-thai-lien',
+        'gia_ban' => '28000',
+        'gia_khuyen_mai' => '23000',
+        'mo_ta' => 'Chè Thái ngọt thanh, nhiều loại trái cây và thạch.',
+        'id_quan_an' => 20,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lx9hpsy034rddf@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 9
+    ],
+    [
+        'id' => 79,
+        'ten_mon_an' => 'Chè Khúc Bạch',
+        'slug_mon_an' => 'che-khuc-bach',
+        'gia_ban' => '25000',
+        'gia_khuyen_mai' => '20000',
+        'mo_ta' => 'Chè khúc bạch thơm béo, hạnh nhân giòn rụm.',
+        'id_quan_an' => 20,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://cdn.tgdd.vn/Files/2018/07/01/1100647/che-khuc-bach-201807011111598312.jpg',
+        'id_danh_muc' => 9
+    ],
+    [
+        'id' => 80,
+        'ten_mon_an' => 'Chè Bưởi',
+        'slug_mon_an' => 'che-buoi',
+        'gia_ban' => '18000',
+        'gia_khuyen_mai' => '15000',
+        'mo_ta' => 'Chè bưởi thơm ngon, giòn giòn.',
+        'id_quan_an' => 20,
+        'tinh_trang' => 1,
+        'hinh_anh' => 'https://mms.img.susercontent.com/vn-11134517-7r98o-lx9hxkmwd1p7c2@resize_ss400x400!@crop_w400_h400_cT',
+        'id_danh_muc' => 9
+    ]
         ]);
     }
 }
