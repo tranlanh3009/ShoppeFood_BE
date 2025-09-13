@@ -19,18 +19,16 @@ class ClientHomeController extends Controller
             ->join('quan_ans', 'quan_ans.id', 'mon_ans.id_quan_an')
             ->select('mon_ans.*', 'quan_ans.ten_quan_an')
             ->orderBy('mon_ans.gia_khuyen_mai')
-            ->take(12)->get();
+            ->get();
 
         $quan_an_yeu_thich = QuanAn::leftjoin('don_hangs', 'don_hangs.id_quan_an', 'quan_ans.id')
             ->select('quan_ans.id', 'quan_ans.ten_quan_an', 'quan_ans.hinh_anh', 'quan_ans.dia_chi')
-            ->take(9)
             ->get();
 
         $voucher = Voucher::where('vouchers.tinh_trang', 1)
             ->where('vouchers.thoi_gian_ket_thuc', '>=', now())
             ->join('quan_ans', 'quan_ans.id', 'vouchers.id_quan_an')
             ->select('vouchers.*', 'quan_ans.ten_quan_an')
-            ->take(6)
             ->get();
 
         $phan_loai = DanhMuc::where('tinh_trang', 1)
@@ -57,7 +55,6 @@ class ClientHomeController extends Controller
                                         DB::raw('MAX(CASE WHEN mon_ans.gia_khuyen_mai > 0 THEN mon_ans.gia_khuyen_mai ELSE mon_ans.gia_ban END) as gia_max')
                                     )
                                     ->groupBy('quan_ans.id', 'quan_ans.ten_quan_an', 'quan_ans.hinh_anh', 'quan_ans.dia_chi') // Cần groupBy khi dùng aggregate
-                                    ->take(9)
                                     ->get();
         return response()->json([
             'data'     => $quan_an_yeu_thich,
